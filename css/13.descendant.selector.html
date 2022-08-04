@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        p {
+            color:blue;
+        }
+        
+        /* 부모 선택자 */
+        .error > p {
+            text-decoration: line-through;
+        }
+
+        /* 자손 선택자 */
+        .error p {
+            border: 2px solid;
+        }
+
+    </style>
+</head>
+<body>
+    <!--.note>.error>p>lorem^^^.error>.note>p>lorem -->
+    <div class="note">
+        <div class="error">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est ratione tempora, quos corporis amet dolores delectus accusamus dicta iusto quod voluptatem! Eos placeat molestiae quod quam commodi deserunt maxime inventore!
+            </p>
+        </div>
+    </div>
+    <div class="error">
+        <div class="note">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, repudiandae. Dolorum quis labore consequuntur. Hic, ipsa ut. Ut saepe vitae esse maxime a laboriosam aliquam quod totam fuga, similique tempora?
+            </p>
+        </div>
+    </div>
+
+
+
+
+   <!-- .note>.error>p>lorem^^.error>.note>p>lorem -->
+   <div class="note">
+    <div class="error">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem distinctio accusamus atque pariatur aperiam sunt, similique assumenda tenetur nesciunt voluptate veritatis doloribus perferendis aut reiciendis itaque ex quis ipsam! Cupiditate.
+        </p>
+    </div>
+    <div class="error">
+        <div class="note">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae minima doloremque enim officiis molestiae quisquam ipsum eos saepe consectetur quis consequatur voluptate eveniet deleniti quod animi, sit et nostrum. Culpa.
+            </p>
+        </div>
+    </div>
+   </div>
+
+   <!-- .note>.error>p>lorem^.error>.note>p>lorem -->
+   <div class="note">
+    <div class="error">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum delectus sint doloribus inventore libero consequatur debitis iusto a optio ipsam nesciunt, aut repudiandae corporis illo recusandae maiores, quasi quo unde.
+        </p>
+        <div class="error">
+            <div class="note">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore at error quia libero modi nemo suscipit eum. Doloremque reprehenderit possimus praesentium eius facere. Vero tempore corrupti eveniet id earum itaque?
+                </p>
+            </div>
+        </div>
+    </div>
+   </div>
+
+
+</body>
+</html>

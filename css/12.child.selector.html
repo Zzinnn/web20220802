@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p {
+            text-decoration: underline;
+        }
+        .error > p {
+            background-color:yellow;
+        } /* error 안에 p에만 적용 */
+        div > p {
+            border: 3px solid;
+        }  /* 두개의 p에 다 적용 */
+        .note > p {
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <div class="note">
+        <div class="error">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem assumenda id cum nulla! Id soluta esse, repellendus excepturi, facilis ad officiis fugit quas qui sequi culpa? Qui accusantium animi quos.
+            </p>
+        </div>
+    </div>
+
+    <div class="error">
+        <div class="note">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. A exercitationem dolorem unde esse placeat architecto, magnam deserunt perferendis excepturi natus praesentium aspernatur qui fuga voluptatum quo est mollitia nobis rerum.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

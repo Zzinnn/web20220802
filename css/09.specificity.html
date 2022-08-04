@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            background-color: yellow;
+        }
+        .note.error{
+            background-color: violet;
+        }
+        .note {
+            background-color: red;
+            text-align: right;
+        }
+        .error {
+            text-align: center;
+        }
+
+        #head1 {
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <h1>specificity 명시도</h1>
+    <p>id 선택자 : 100점</p>
+    <p>class 선택자 : 10점</p>
+    <p>element 선택자 : 1점</p>
+
+
+<h1 id="head1" class="note error">Lorem, ipsum.</h1>
+<h1 class="note error">Architecto, vitae?</h1>
+<h1 class="note error">Quibusdam, eligendi!</h1>
+<h1 class="note error">Eligendi, quam!</h1>
+<h1 class="note error">Iusto, distinctio!</h1>
+
+</body>
+</html>
