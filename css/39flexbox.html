@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            display: flex; 
+        }
+        .main1,
+        .main2 {
+            flex:1;
+             background-color: aqua;
+             text-align: center;
+            }
+
+        .main1 > p {
+            background-color: blueviolet; 
+            padding: 10px;
+
+           border-radius: 30px;
+           color:#fff;
+           font-size: 20px;
+
+        }
+        .main1 > p:nth-child(odd) {
+            background-color: crimson;
+            color:#fff;
+        }
+        .main2{
+            background-color: yellow;
+            padding-left: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main1" >
+            <h1>
+                HTML
+            </h1>
+            <p>
+                Lorem, ipsum dolor.
+            </p>
+            <p>
+                Cupiditate.
+            </p>
+            <p>
+                Incidunt, dicta sequi?
+            </p>
+            <p>
+                Animi.
+            </p>
+        </div>
+        <div class="main2" >
+            <h1>
+                Lorem, ipsum.
+            </h1>
+            <div>
+                Lorem ipsum dolor sit amet 
+            </div>
+            <div>
+                Distinctio non deleniti in illo
+            </div>
+            <div>
+                Unde tempora quidem ipsa accusamus eum,
+            </div>
+            <div>
+                Blanditiis nobis numquam quia molestiae
+            </div>
+            <div>
+                Repudiandae sapiente, pariatur sit 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
