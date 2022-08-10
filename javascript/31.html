@@ -10,35 +10,22 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
+         console.log(9);
 
-
-        console.log(4);
-        console.log(3);
-        console.log(9);
-        console.log(20);
-        console.log(10); //순서대로 실행
-
-        //함수 : 나중에 실행되는 코드 블럭
-        // statement를 묶는 {}
-        // 함수는 이름이 불려질 때 (call, invoke) 실행
-        // 함수는 여러번 호출할 수 있다
-
-        function myfunc() {     //함수 정의
-            console.log(99);
-            console.log(999);
+        if (false) {
+            console.log(8);
+        } else if (false) {
+            // else if는 0개 이상 작성 가능
+            console.log(7);
+        } else if (false) {
+            console.log(6);
+        } else if (false) {
+            console.log(5);
+        } else {
+            // 0또는 1개 작성 가능 (작성한다면 마지막에)
+            console.log(4);
         }
-        
-        console.log(300);
-        
-        myfunc(); //함수 호출
-
-        myfunc();
-        
-        console.log(20000);
-        console.log(10000);
-        
-        myfunc(); //이름이 불려질 때
-        
+        console.log(3);
     </script>
 </body>
 </html>

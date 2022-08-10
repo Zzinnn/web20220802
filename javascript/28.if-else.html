@@ -10,35 +10,18 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
+        // prompt 를 띄워서 나이를 입력 받고
+        // 20이상이면 "어른입니다" 출력
+        // 20미만이면 "아이입니다" 출력
 
-
-        console.log(4);
-        console.log(3);
-        console.log(9);
-        console.log(20);
-        console.log(10); //순서대로 실행
-
-        //함수 : 나중에 실행되는 코드 블럭
-        // statement를 묶는 {}
-        // 함수는 이름이 불려질 때 (call, invoke) 실행
-        // 함수는 여러번 호출할 수 있다
-
-        function myfunc() {     //함수 정의
-            console.log(99);
-            console.log(999);
+        let age = prompt ('나이를 입력하세요');
+        // console.log(age);
+        if ( age >= 20) {
+            console.log("어른입니다.");
+        } else {
+            console.log("아이입니다.");
         }
-        
-        console.log(300);
-        
-        myfunc(); //함수 호출
 
-        myfunc();
-        
-        console.log(20000);
-        console.log(10000);
-        
-        myfunc(); //이름이 불려질 때
-        
     </script>
 </body>
 </html>

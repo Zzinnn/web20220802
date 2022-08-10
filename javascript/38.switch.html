@@ -11,34 +11,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
 
+        switch (3) {
+           case 3:
+            console.log("3입력됨");
+            //  break; 가 없다면
 
-        console.log(4);
-        console.log(3);
-        console.log(9);
-        console.log(20);
-        console.log(10); //순서대로 실행
+           case 4:
+            console.log("4입력됨");
+            // break;
+        
+           case 5:
+            console.log("5입력됨");
+            break;
 
-        //함수 : 나중에 실행되는 코드 블럭
-        // statement를 묶는 {}
-        // 함수는 이름이 불려질 때 (call, invoke) 실행
-        // 함수는 여러번 호출할 수 있다
+           default:
+            console.log("3,4,5 아님");
+            break;
 
-        function myfunc() {     //함수 정의
-            console.log(99);
-            console.log(999);
         }
-        
-        console.log(300);
-        
-        myfunc(); //함수 호출
 
-        myfunc();
-        
-        console.log(20000);
-        console.log(10000);
-        
-        myfunc(); //이름이 불려질 때
-        
+        console.log("다음 실행 흐름...");
+
+
     </script>
 </body>
 </html>
