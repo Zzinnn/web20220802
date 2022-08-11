@@ -10,17 +10,30 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-        let aa = prompt("점수를 입력해주세요.")
+        // let aa = prompt("점수를 입력해주세요.")
 
-        if (aa >= 60) {
-            console.log("합격입니다.");
-        } else if (aa > 100) {
-            console.log("100 이하의 수를 입력해주세요.");
-        } else if (aa < 0) {
-            console.log("0보다 큰 수를 입력해주세요.");
-        } else {
-            console.log("불합격입니다.");
-        }
+        // if (aa >= 60) {
+        //     console.log("합격입니다.");
+        // } else if (aa > 100) {
+        //     console.log("100 이하의 수를 입력해주세요.");
+        // } else if (aa < 0) {
+        //     console.log("0보다 큰 수를 입력해주세요.");
+        // } else {
+        //     console.log("불합격입니다.");
+        // }
+
+        let score =Number(prompt("점수를 입력하세요."));
+            
+        if (score <=100 && score >= 60) {
+            console.log("합격입니다");
+        } else if (score > 100) {
+            console.log("100보다 작은 수를 입력해주세요");
+        } else if (score < 0) { 
+            console.log("0보다 큰 수를 입력해주세요");
+         } else {
+            console.log("불합격입니다");
+         }
+
 
     </script>
 </body>

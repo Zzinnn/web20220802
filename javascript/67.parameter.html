@@ -10,18 +10,16 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-
-        console.log("이전 코드들..");
-
-        for (let i = 1; i <= 5; i++) { //5번 실행
-            console.log("반복할 코드들");
+        // 파라미터명 작성 관습은 변수명 작성 관습과같다
+        // lowerCamelCase
+        function printDouble(a) {
+            console.log(a+a);
         }
-
-
-    
-        console.log("다음 코드들...");
-
-
+            
+        printDouble(3); //6출력
+        printDouble(5); //10출력
+        printDouble(300); //600출력
+        printDouble("hi"); //hihi출력
     </script>
 </body>
 </html>
