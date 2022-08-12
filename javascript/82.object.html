@@ -10,31 +10,26 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-        // switch (/*값*/) {
-        //     case /* 값 */ :             //case 1개 이상 
-        //         //statements..          //case break 사이가 짝이 맞음 / 사이가 코드블럭 부분
-        //         //statements..
-        //         break;
-        //     case /* 값 */ :
-        //         //statements..
-        //         //statements..
-        //         break;
-        // }
-
-            console.log("이전 코드들...");
-
-        switch (3) {
-            case 3:    //switch 값과 case의 값이 같으면 실행
-                console.log("a");
-                break;    //break 블럭 종료
-            case 4:
-                console.log("b");
-                break;
+        let a = {
+            name : "donald",
+            age : 40,
+            car : {                //객체도 프로퍼티가 될 수 있다
+                model :"tesla",
+                color:"white",
+                weight: 1000
+            }
         }
 
+        a.car.model = "sonata";
+        a.car.color = "black";
+        a.car.weight = 5000;
+
+        console.log(a.car.model);
+        console.log(a.car.color);
+        console.log(a.car.weight);
 
 
-        console.log("이후 코드들...");
+
     </script>
 </body>
 </html>
