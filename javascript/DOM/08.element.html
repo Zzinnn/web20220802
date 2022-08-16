@@ -28,7 +28,7 @@
     <script>
         let heads = document.querySelectorAll("h1");
 
-        for(let i = 0; i <= heads.length; i++){
+        for(let i = 0; i < heads.length; i++){
             heads[i].addEventListener("click", function() {
                 document.querySelector("#input1").value =this.textContent.trim();
             })
@@ -36,7 +36,13 @@
 
 
 
+        let heads = document.querySelectorAll("h1");
 
+for (let i = 0; i < heads.length; i++) {
+    heads[i].addEventListener("click", function() {
+        document.querySelector("#input1").value = this.textContent.trim();
+    })
+}
 
 
 

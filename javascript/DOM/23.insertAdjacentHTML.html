@@ -8,21 +8,21 @@
 </head>
 <body>
 
+    <input type="text" id="input1">
+    <button id="btn1">시작태그 전 추가("beforebegin")</button>
+    <button id="btn2">시작태그 다음 추가("afterbegin")</button>
+    <button id="btn3">종료태그 전 추가("beforeend")</button>
+    <button id="btn4">종료태그 다음 추가("afterend")</button>
+    <div id="container1"></div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-        let a =[3,5,10,2,1,7,5,6];    //8
-        let b =[100,200,33,22,33,11,22];    //7
-        
-        let sum = 0;
-        for (let i = 0; i < a.length; i++) {
-            sum += a[i];
-            }
-        for (let i = 0; i < b.length; i++) {
-            sum += b[i];
-        }
-        // 두 배열이 가진 모든 값의 합을 구해서 출력
-        console.log("합", sum);   
-        console.log("평균", sum / (a.length + b.length));
+
+        document.querySelector("#btn1").insertAdjacentHTML("beforebegin","<p>시작태그 전 추가</p>")
+        document.querySelector("#btn2").insertAdjacentHTML("afterbegin","<p>시작태그 다음 추가</p>")
+        document.querySelector("#btn3").insertAdjacentHTML("beforend","<p>종료태그 전 추가</p>")
+        document.querySelector("#btn4").insertAdjacentHTML("afterend","<p>종료태그 다음 추가</p>")
+
 
 
     </script>
