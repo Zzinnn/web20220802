@@ -84,9 +84,11 @@
         console.log("j와 k의 값",l);
 
         
+
         // m에 j의 값과 k의 값을 교차해서 복사해 넣는 코드 작성
         let m = [];
-        for (let i=0; i<j.length; i++) {
+
+        for (let i=0; i<j.length; i++) {    // j.length가 k보다 숫자가 더 크기 때문에 써준다 
             m.push(j[i]);
             m.push(k[i]);
         }
